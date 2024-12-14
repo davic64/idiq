@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Bible, Slides } from "./pages";
+import { Bible, Slides, PreachingPage as Preaching } from "./pages";
 import { Layout } from "./components/common/Layout";
 
 const routes = [
@@ -14,6 +14,10 @@ const routes = [
       {
         path: "bible",
         element: <Bible />,
+      },
+      {
+        path: "preaching",
+        element: <Preaching />,
       },
     ],
   },

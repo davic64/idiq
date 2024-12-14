@@ -2,3 +2,4 @@
 export * from "./Slides";
 export * from "./Slides/NewSlide";
 export * from "./Bible";
+export * from "./Preaching";

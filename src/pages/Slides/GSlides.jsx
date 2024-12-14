@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { Input } from "../../components/ui/Input";
 import { PlusIcon, SearchIcon } from "lucide-react";
 import { Tooltip } from "../../components/ui/Tooltip";
@@ -26,4 +27,4 @@ const GSlides = ({ setNewSlide }) => {
   );
 };
 
-export default GSlides;
+export default memo(GSlides);
