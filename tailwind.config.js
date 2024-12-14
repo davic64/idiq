@@ -3,10 +3,11 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,jsx}",
-    "node_modules/preline/dist/*.js",
+    "./node_modules/preline/preline.js",
   ],
   theme: {
     extend: {},
   },
-  plugins: ["node_modules/preline/dist/*.js"],
+  // eslint-disable-next-line no-undef
+  plugins: [require("preline/plugin")],
 };
