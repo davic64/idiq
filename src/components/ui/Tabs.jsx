@@ -9,7 +9,7 @@ export const ItemTab = ({ to, children }) => {
         `py-4 px-1 inline-flex items-center gap-x-2 border-b-2 text-sm whitespace-nowrap focus:outline-none disabled:opacity-50 disabled:pointer-events-none ${
           isActive
             ? "border-blue-600 text-blue-600 font-semibold"
-            : "border-transparent text-gray-500 hover:text-blue-600 focus:text-blue-600 dark:text-neutral-400 dark:hover:text-blue-500"
+            : "border-transparent text-gray-500 hover:text-blue-600 focus:text-blue-600"
         }`
       }
       role="tab"
@@ -26,17 +26,15 @@ export const Tabs = ({ children }) => {
   );
 
   return (
-    <div>
-      <div className="border-b border-gray-200">
-        <nav
-          className="-mb-0.5 flex justify-center gap-x-6"
-          aria-label="Tabs"
-          role="tablist"
-          aria-orientation="horizontal"
-        >
-          {tabs}
-        </nav>
-      </div>
+    <div className="border-b border-gray-200 z-20">
+      <nav
+        className="-mb-0.5 flex justify-center gap-x-6"
+        aria-label="Tabs"
+        role="tablist"
+        aria-orientation="horizontal"
+      >
+        {tabs}
+      </nav>
     </div>
   );
 };

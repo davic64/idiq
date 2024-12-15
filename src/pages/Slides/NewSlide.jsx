@@ -18,7 +18,7 @@ const NewSlide = ({ setNewSlide }) => {
         <Instructions />
       </Modal>
       <div className="w-full space-y-4 h-2/3">
-        <div className="text-gray-500 flex items-center justify-between py-4">
+        <div className="text-gray-500 grid grid-cols-3 py-4">
           <div
             className="flex items-center gap-2 cursor-pointer"
             onClick={() => setNewSlide(false)}
@@ -26,12 +26,15 @@ const NewSlide = ({ setNewSlide }) => {
             <ArrowLeftIcon />
             <p>Regresar</p>
           </div>
-          <Tooltip tooltipText="Instrucciones" placement="left">
-            <button className="relative group" onClick={openModal}>
-              <CircleHelpIcon />
-              <span className="absolute inset-0 rounded-full animate-ping bg-blue-300/75" />
-            </button>
-          </Tooltip>
+          <h3 className="font-bold text-xl text-center">Nueva Alabanza</h3>
+          <div className="text-right">
+            <Tooltip tooltipText="Instrucciones" placement="left">
+              <button className="relative" onClick={openModal}>
+                <CircleHelpIcon />
+                <span className="absolute inset-0 rounded-full animate-ping bg-blue-300/75" />
+              </button>
+            </Tooltip>
+          </div>
         </div>
         <Input
           className="w-full"

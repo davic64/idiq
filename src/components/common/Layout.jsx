@@ -7,7 +7,6 @@ export const Layout = () => {
       <Tabs>
         <ItemTab to="/">Alabanzas</ItemTab>
         <ItemTab to="/bible">Biblia</ItemTab>
-        <ItemTab to="/preaching">Slides</ItemTab>
       </Tabs>
 
       <div className="flex-1 overflow-auto p-6">
